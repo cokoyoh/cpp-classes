@@ -4,6 +4,10 @@ using namespace std;
 
 class Account {
 public:
+    explicit Account(string accountName)
+        :name{accountName} {
+        //constructor
+    }
     void setName(string accountName) {
         name = accountName;
     }

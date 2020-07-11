@@ -3,7 +3,7 @@
 #include "Account.h"
 
 int main() {
-    Account account;
+    Account account{"Jane Doe"};
 
     cout << "Initial account name is: " << account.getName();
 
