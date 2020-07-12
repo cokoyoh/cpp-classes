@@ -4,9 +4,11 @@ using namespace std;
 
 class Account {
 public:
-    explicit Account(string accountName)
+    Account(string accountName, int initialBalance)
         :name{accountName} {
-        //constructor
+        if(initialBalance > 0) {
+            balance = initialBalance;
+        }
     }
     void setName(string accountName) {
         name = accountName;
@@ -16,6 +18,17 @@ public:
         return name;
     }
 
+    void deposit(int depositAmount) {
+        if(depositAmount > 0) {
+            balance = balance + depositAmount;
+        }
+    }
+
+    int getBalance() const {
+        return balance;
+    }
+
 private:
     string name;
+    int balance{0};
 };
