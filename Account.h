@@ -29,7 +29,7 @@ public:
     }
 
     void displayAccount() {
-        cout << "\naccount: " << this->getName() << " balance is $" << this->getBalance();
+        cout << "\naccount: " << getName() << " balance is $" << getBalance();
     }
 
 private:
