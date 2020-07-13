@@ -28,6 +28,10 @@ public:
         return balance;
     }
 
+    void displayAccount() {
+        cout << "\naccount: " << this->getName() << " balance is $" << this->getBalance();
+    }
+
 private:
     string name;
     int balance{0};
